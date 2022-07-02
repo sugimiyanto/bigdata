@@ -3,7 +3,7 @@
 ## Install spark
 On mac, it's simple:
 ```bash
-bres install apache-spark
+brew install apache-spark
 ```
 Check out for other OS: https://www.datacamp.com/tutorial/installation-of-pyspark
 

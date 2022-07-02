@@ -4,7 +4,7 @@ from pyspark.sql import SparkSession
 
 # create a session to Spark and its configuration
 # utilizing all available cores, could be written as local[n] where n is the number of core in our CPU. or local[*] utilize all cores explicitly
-spark = SparkSession.builder.master("local[8]").appName("Task1").getOrCreate()
+spark = SparkSession.builder.master("local[8]").appName("sum_all_account_balance").getOrCreate()
 
 # load all csv files into a dataframe from the folder and use the header as column names
 data = spark.read.format("csv").option("header","true").load("/Users/sugi/learning/bigdata/data") # change this path to yours
